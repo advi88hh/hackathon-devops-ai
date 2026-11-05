@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; font-family: 'Manrope', sans-serif; background: #080d18; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: radial-gradient(ellipse at 12% 0%, rgba(38,91,119,.18), transparent 38%), radial-gradient(ellipse at 90% 18%, rgba(68,75,150,.12), transparent 34%), #080d18; color: #e7edf7; }
+button, input, textarea, select { font: inherit; }
+::selection { background: rgba(92,225,180,.25); }
+.grid-bg { background-image: linear-gradient(rgba(112,142,180,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(112,142,180,.035) 1px, transparent 1px); background-size: 36px 36px; }
+.glass { background: linear-gradient(145deg, rgba(19,31,49,.92), rgba(12,20,34,.88)); border: 1px solid rgba(135,160,196,.13); box-shadow: 0 18px 60px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.025); backdrop-filter: blur(18px); }
+.input-dark { width:100%; border:1px solid #29364b; border-radius:11px; background:#0b1321; color:#e7edf7; outline:none; padding:12px 13px; transition:.2s; }
+.input-dark:focus { border-color:#4b9f91; box-shadow:0 0 0 3px rgba(92,225,180,.09); }
+.input-dark::placeholder { color:#637188; }
+.btn-primary { background:linear-gradient(135deg,#5ce1b4,#35bfa5); color:#062019; font-weight:800; box-shadow:0 7px 24px rgba(49,194,158,.15); transition:transform .2s,filter .2s; }
+.btn-primary:hover { transform:translateY(-1px); filter:brightness(1.07); }
+.btn-secondary { background:#18263a; border:1px solid #30445e; color:#cfe0f5; transition:.2s; }
+.btn-secondary:hover { border-color:#5ce1b4; background:#1b3040; }
+.pulse-dot { animation:pulse 1.8s infinite; }
+@keyframes pulse { 0%,100% { box-shadow:0 0 0 0 rgba(92,225,180,.42) } 50% { box-shadow:0 0 0 7px rgba(92,225,180,0) } }
+.feed-enter { animation:fadeUp .35s ease-out; }
+@keyframes fadeUp { from { opacity:0; transform:translateY(7px) } to { opacity:1; transform:translateY(0) } }
+.scanline { background:linear-gradient(transparent 50%,rgba(92,225,180,.018) 50%); background-size:100% 4px; }
+pre { white-space:pre-wrap; overflow-wrap:anywhere; }
